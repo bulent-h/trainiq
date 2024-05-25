@@ -3,7 +3,6 @@ import { inter } from "@/app/ui/fonts";
 import { Metadata } from "next";
 import { Providers } from "../lib/providers";
 import Header from "@/app/ui/layout/header";
-import Footer from "@/app/ui/layout/footer";
 import { i18n } from "@/i18n.config";
 
 export const metadata: Metadata = {
