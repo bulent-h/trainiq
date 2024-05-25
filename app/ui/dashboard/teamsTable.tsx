@@ -207,7 +207,7 @@ function TeamsTable({ teams }: Teams) {
               {sortingData?.map((team, index) => (
                 <li
                   key={index}
-                  className="rounded-xl hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-[#444455] odd:bg-white dark:odd:bg-gray-900 even:bg-gray-50 dark:even:bg-gray-800"
+                  className="rounded-xl  text-gray-700 dark:text-gray-300  odd:bg-white dark:odd:bg-gray-900 even:bg-gray-50 dark:even:bg-gray-800"
                 >
                   <Accordion team={team} />
                 </li>

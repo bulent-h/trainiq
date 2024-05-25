@@ -45,16 +45,16 @@ function CoursesTable({ courses }: { courses: Course[] }) {
                     <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                   </svg>
                 </div>
-                <div className={`${colorMap.get(course.status)} hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700`}></div>
+                <div className={`${colorMap.get(course.status)} hidden sm:flex w-full xbg-gray-200 h-0.5 xdark:bg-gray-700`}></div>
               </div>
               <div className="mt-3 pr-4">
                 <h3 className="text-base mb-2  font-semibold text-gray-900 dark:text-white">
                   {course.title}
                 </h3>
-                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time className="block mb-2 p-2 font-normal text-xs leading-none text-gray-500 dark:text-gray-400">
                   {course.due_date}{" - " + course.status}
                 </time>
-                <p className="text-sm font-normal bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 p-1.5 rounded-xl text-gray-500 dark:text-gray-400">
+                <p className="text-sm font-normal bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-2 rounded-xl text-gray-600 dark:text-gray-400">
                   {course.description}
                 </p>
               </div>

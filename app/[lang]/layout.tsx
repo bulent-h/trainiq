@@ -2,7 +2,7 @@ import "@/app/ui/global.css";
 import { inter } from "@/app/ui/fonts";
 import { Metadata } from "next";
 import { Providers } from "../lib/providers";
-import Header from "@/app/ui/layout/header";
+import Header from "@/app/ui/layout/sidebar";
 import { i18n } from "@/i18n.config";
 
 export const metadata: Metadata = {

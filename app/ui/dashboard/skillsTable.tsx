@@ -128,14 +128,14 @@ function TopSkillsTable({
               {sortingData?.map((data, index) => (
                 <li
                   key={index}
-                  className="flex flex-col font-light hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-[#444455]  xtransition ease-in delay-50 rounded-xl odd:bg-white dark:odd:bg-gray-900 even:bg-gray-50 dark:even:bg-gray-800  "
+                  className="flex flex-col font-light hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-[#444455]  xtransition ease-in delay-50 odd:bg-white dark:odd:bg-gray-900 even:bg-gray-50 dark:even:bg-gray-800  "
                 >
                   <div className="flex flex-row justify-around text-sm">
-                    <span className="flex justify-start items-center w-[60%] py-2 pl-2 my-1.5 ">
+                    <span className=" w-[60%] py-2 pl-4 my-1.5 ">
                       {data?.skill}
                     </span>
 
-                    <span className="flex justify-center items-center w-[40%] py-2 pl-2 my-1.5 ">
+                    <span className=" w-[40%] py-2 pl-4 my-1.5 ">
                       {data?.employees}
                     </span>
                   </div>

@@ -45,13 +45,17 @@ const Accordion = ({ team }: TeamProps) => {
 
               <span className="flex justify-start items-center lg:w-[50%] w-[40%] py-2 pl-2 text-sm my-1.5   ">
                 <div className="text-start ">
-                  {isActive ? team.description : `${team.description.substring(0, 100)}`}
-                  {(team.description.length>50)&&
-                    <p
-                    className=" text-sm inline hover:text-blue-500 dark:hover:text-blue-700"
+                  {isActive ? team.description : `${team.description.substring(0, 70)}`}
+                  {(team.description.length>70)&&
+                    <div
+                    className=" text-xs inline "
                   >
-                    ... {isActive ? " show less" : " show more"}
-                  </p>
+                    ...
+                    <div className="text-blue-400 dark:text-blue-700   hover:text-blue-500 dark:hover:text-blue-500">
+                    {isActive ? " show less" : " show more"}
+
+                    </div>
+                  </div>
                   }
                 </div>
               </span>
@@ -79,9 +83,9 @@ const Accordion = ({ team }: TeamProps) => {
       </h2>
 
       {isActive && (
-        <div className=" text-sm text-gray-700 ">
+        <div className=" text-sm ">
           <div className="m-5 rounded-xl border border-gray-300 dark:border-gray-700 overflow-hidden">
-            <div className="flex flex-col bg-gray-50 dark:bg-gray-800  border-b-[1px] border-gray-200 dark:border-gray-700">
+            <div className="flex flex-col bg-gray-50 dark:bg-gray-700  border-b-[1px] border-gray-200 dark:border-gray-700">
               <div className="flex flex-row justify-around text-sm">
                 <span className="flex justify-start items-center w-[15%] py-1 pl-2">
                   Name
@@ -104,9 +108,9 @@ const Accordion = ({ team }: TeamProps) => {
               </div>
             </div>
             {team?.employees.map((employee, index) => (
-              <li
+              <div
                 key={index}
-                className="flex flex-col font-light hover:bg-blue-50 text-gray-700 dark:text-gray-300 dark:hover:bg-[#444455]  xtransition ease-in delay-50 rounded-xl odd:bg-white dark:odd:bg-gray-900 even:bg-gray-50 dark:even:bg-gray-800  "
+                className="flex flex-col font-light  text-gray-700 dark:text-gray-300   xtransition ease-in delay-50 odd:bg-white dark:odd:bg-gray-900 even:bg-gray-50 dark:even:bg-gray-800  "
               >
                 <div className="flex flex-row justify-around text-sm">
                   <span className="flex justify-start items-center w-[15%] break-words py-1.5 pl-2  my-1">
@@ -134,7 +138,7 @@ const Accordion = ({ team }: TeamProps) => {
                     ))}
                   </span>
                 </div>
-              </li>
+              </div>
             ))}
           </div>
         </div>
