@@ -22,7 +22,6 @@ interface TeamProps {
 const Accordion = ({ team }: TeamProps) => {
   const [isActive, setIsActive] = useState(false);
   const [showMore, setShowMore] = useState(false);
-  // {}
   return (
     
     <div className="overflow-auto h-full">
@@ -50,7 +49,6 @@ const Accordion = ({ team }: TeamProps) => {
                   {(team.description.length>50)&&
                     <p
                     className=" text-sm inline hover:text-blue-500 dark:hover:text-blue-700"
-                    // onClick={() => setIsActive(!isActive)}
                   >
                     ... {isActive ? " show less" : " show more"}
                   </p>

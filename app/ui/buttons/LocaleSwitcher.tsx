@@ -32,7 +32,7 @@ export default function LocaleSwitcher({svgSize}:{svgSize:any}) {
         <FaEarthAmericas className={`${svgSize} duration-25 delay-75 dark:fill-white fill-gray-500`} />
       </button>
       {isComponentVisible && (
-        <DropdownMenu ref={ref}>
+        <DropdownMenu>
           { Object.entries(i18n.locales).map(([key, val]) =>{
             return (
               <li

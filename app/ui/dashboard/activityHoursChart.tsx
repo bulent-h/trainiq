@@ -36,7 +36,7 @@ ChartJS.register(
 
 const options = {
   responsive: true,
-  tension:0.333,
+  tension: 0.333,
   interaction: {
     mode: "index" as const,
     intersect: false,
@@ -61,12 +61,10 @@ const options = {
         backdropColor: "rgba(128, 128, 128, 128)",
         color: "rgba(128, 128, 128, 128)",
         textStrokeColor: "rgba(128, 128, 128, 128)",
-
       },
       border: {
         color: "rgba(128, 128, 128, 128)",
       },
-
     },
     x: {
       display: true,
@@ -79,7 +77,6 @@ const options = {
         backdropColor: "rgba(128, 128, 128, 128)",
         color: "rgba(128, 128, 128, 128)",
         textStrokeColor: "rgba(128, 128, 128, 128)",
-        
       },
       border: {
         color: "rgba(128, 128, 128, 128)",
@@ -122,16 +119,21 @@ export default function ActivityHoursChart({
       },
     ],
   };
-  console.log(data);
   return (
     <>
-      {/* <h3
+      <h3
         className="px-2 py-2 font-semibold text-gray-500 align-middle border-b-[1px] border-gray-200 dark:border-gray-700">
         Activity Chart
-      </h3> */}
-      <div className="overflow-auto h-full w-full">
-        <div className="flex justify-center items-center h-full w-full">
-          <Line options={options} data={data} className="min-w-[20rem] min-h-[20rem] max-w-full max-h-full p-2" />
+      </h3>
+      <div className="overflow-auto h-full ">
+        <div className="min-w-[40rem]">
+          <div className="flex justify-center items-center h-full w-full">
+            <Line
+              options={options}
+              data={data}
+              className="min-w-[20rem] min-h-[20rem] max-w-full max-h-full p-2"
+            />
+          </div>
         </div>
       </div>
     </>

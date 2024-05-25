@@ -9,7 +9,7 @@ export default async function Header({ lang }: { lang: Locale }) {
   return (
     <>
       <nav className="navbar group z-50 lg:px-0 lg:ml-2 px-2  lg:py-4 rounded-2xl h-fit fixed transition ease-in delay-50">
-        <ul className="navbar-nav shadow-2xl group-hover:p-none group-hover:m-0 flex flex-col items-center overflow-x-hidden lg:overflow-y-auto overflow-y-hidden  bg-gradient-to-t from-indigo-300  via-violet-300 to-purple-300 dark:from-indigo-950  dark:via-violet-950 dark:to-purple-950 rounded-2xl overflow-auto h-full ">
+        <ul className="navbar-nav drop-shadow-2xl group-hover:p-none group-hover:m-0 flex flex-col items-center overflow-x-hidden lg:overflow-y-auto overflow-y-hidden  bg-gradient-to-t from-fuchsia-100 to-indigo-200 dark:from-gray-900 dark:to-indigo-950 rounded-2xl overflow-auto h-full ">
           <li className="logo">
             <a href="#" className="nav-link">
               <span className="link-text logo-text transition ease-in delay-900 hidden hover:inline">
@@ -162,21 +162,5 @@ export default async function Header({ lang }: { lang: Locale }) {
   );
 }
 
-{
-  /* // <header className="py-4 drop-shadow-md z-50 px-6 lg:px-8  bg-black/5 xfixed xinset-x-0 xtop-0 ">
-    //   <nav className="flex justify-between items-center text-black dark:text-white ">
-    //     <ul className="flex gap-x-8">
-    //       <li>
-    //         <Link href={`/${lang}`}>{navigation.home}</Link>
-    //       </li>
-    //       <li>
-    //         <Link href={`/${lang}/about`}>{navigation.about}</Link>
-    //       </li>
-    //     </ul>
-    //     <div className="flex justify-between">
-    //       <ThemeSwitch svgSize={"w-[28px] h-[28px] "} />
-    //       <LocaleSwitcher svgSize={"w-[28px] h-[28px]"} />
-    //     </div>
-    //   </nav>
-    // </header> */
-}
+
+

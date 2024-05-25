@@ -21,13 +21,12 @@ export default function RootLayout(props: any) {
   return (
     <html lang={props.params.lang} suppressHydrationWarning>
       <body
-        className={`${inter.className} min-h-screen text-xl text-black dark:text-white bg-gradient-to-tl from-gray-100  to-gray-100 dark:from-indigo-950  dark:to-gray-950 `}
+        className={`${inter.className} min-h-screen text-xl text-black dark:text-white bg-gradient-to-r from-fuchsia-200 to-indigo-200 dark:from-gray-950 dark:to-indigo-950 `}
       >
         <Providers>
             <Header lang={props.params.lang} />
 
             {props.children}
-          {/* <Footer /> */}
         </Providers>
       </body>
     </html>

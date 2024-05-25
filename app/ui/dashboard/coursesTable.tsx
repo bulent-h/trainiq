@@ -10,8 +10,8 @@ interface Course {
 }
 
 const colorMap = new Map([
-    ["Upcoming", "text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900"],
-    ["In Progress", "text-yellow-600 dark:text-yellow-400 bg-yellow-100 dark:bg-yellow-900"]
+    ["Upcoming", "text-blue-700 dark:text-blue-400 bg-blue-300 dark:bg-blue-900"],
+    ["In Progress", "text-green-700 dark:text-green-400 bg-green-300 dark:bg-green-900"]
   ]);
 
 function CoursesTable({ courses }: { courses: Course[] }) {
@@ -30,7 +30,7 @@ function CoursesTable({ courses }: { courses: Course[] }) {
       </h3>
 
       <div className="overflow-auto h-full p-5">
-        <ol className="flex flex-row w-full  h-full ">
+        <ol className="flex flex-row w-full h-full ">
           {sortedCourses.map((course, index) => (
             <li key={index} className="relative min-w-[15rem] ">
               <div className="flex items-center">
@@ -47,7 +47,7 @@ function CoursesTable({ courses }: { courses: Course[] }) {
                 </div>
                 <div className={`${colorMap.get(course.status)} hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700`}></div>
               </div>
-              <div className="mt-3 sm:pe-8">
+              <div className="mt-3 pr-4">
                 <h3 className="text-base mb-2  font-semibold text-gray-900 dark:text-white">
                   {course.title}
                 </h3>
