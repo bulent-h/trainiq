@@ -1,0 +1,9 @@
+{
+  "dashboard": {
+    "data": {
+      "total_completed_courses": "Total Employee Courses",
+      "average_employee_score": "Average Employee Score",
+      "total_employees": "Total Employee"
+    }
+  }
+}

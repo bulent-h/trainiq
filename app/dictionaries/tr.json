@@ -1,0 +1,9 @@
+{
+    "dashboard": {
+      "data": {
+        "total_completed_courses": "Toplam Tamamlanan dersler",
+        "average_employee_score": "Ortalama çalışan puanı",
+        "total_employees": "Toplam Çalışan"
+      }
+    }
+  }

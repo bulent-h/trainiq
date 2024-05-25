@@ -1,0 +1,9 @@
+{
+  "dashboard": {
+    "data": {
+      "total_completed_courses": "insgesamt abgeschlossene Kurse",
+      "average_employee_score": "durchschnittliche Mitarbeiterbewertung",
+      "total_employees": "Gesamtzahl der Mitarbeiter"
+    }
+  }
+}
