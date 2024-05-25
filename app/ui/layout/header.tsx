@@ -6,8 +6,6 @@ import ThemeSwitch from "@/app/ui/buttons/ThemeSwitch";
 import { IoSettings } from "react-icons/io5";
 
 export default async function Header({ lang }: { lang: Locale }) {
-  const { navigation } = await getDictionary(lang);
-
   return (
     <>
       <nav className="navbar group z-50 lg:px-0 lg:ml-2 px-2  lg:py-4 rounded-2xl h-fit fixed transition ease-in delay-50">
