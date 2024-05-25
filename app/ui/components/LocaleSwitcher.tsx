@@ -54,7 +54,7 @@ export default function LocaleSwitcher({svgSize}:{svgSize:any}) {
 function DropdownMenu({ children }: any) {
 
   return (
-    <div className=" z-50 bg-gray-100/75 dark:bg-gray-900/75  border drop-shadow-xl border-gray-300 dark:border-gray-800  rounded-xl absolute  origin-bottom-left  transform -translate-x-1/2 p-4 overflow-hidden transition-height  ease">
+    <div className=" z-50 bg-gray-100/75 dark:bg-gray-900/75  border shadow-xl border-gray-300 dark:border-gray-800  rounded-xl absolute  origin-bottom-left  transform -translate-x-1/2 p-4 overflow-hidden transition-height  ease">
       <div>
         <div className="menu">{children}</div>
       </div>

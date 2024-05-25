@@ -1,15 +1,13 @@
 import Link from "next/link";
 import { Locale } from "@/i18n.config";
-import { getDictionary } from "@/app/lib/dictionaries";
-import LocaleSwitcher from "@/app/ui/buttons/LocaleSwitcher";
-import ThemeSwitch from "@/app/ui/buttons/ThemeSwitch";
-import { IoSettings } from "react-icons/io5";
+
+import ThemeSwitch from "@/app/ui/components/ThemeSwitch";
 
 export default async function Header({ lang }: { lang: Locale }) {
   return (
     <>
       <nav className="navbar group z-50 lg:px-0 lg:ml-2 px-2  lg:py-4 rounded-2xl h-fit fixed transition ease-in delay-50">
-        <ul className="navbar-nav drop-shadow-2xl group-hover:p-none group-hover:m-0 flex flex-col items-center overflow-x-hidden lg:overflow-y-auto overflow-y-hidden  bg-gradient-to-t from-fuchsia-100 to-indigo-200 dark:from-gray-900 dark:to-indigo-950 rounded-2xl overflow-auto h-full ">
+        <ul className="navbar-nav shadow-2xl group-hover:p-none group-hover:m-0 flex flex-col items-center overflow-x-hidden lg:overflow-y-auto overflow-y-hidden  bg-gradient-to-t from-fuchsia-100 to-indigo-200 dark:from-gray-900 dark:to-indigo-950 rounded-2xl overflow-auto h-full ">
           <li className="logo">
             <a href="#" className="nav-link">
               <span className="link-text logo-text transition ease-in delay-900 hidden hover:inline">
