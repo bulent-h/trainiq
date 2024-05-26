@@ -126,7 +126,7 @@ export default function ActivityHoursChart({
         Activity Chart
       </h3>
       <div className="overflow-auto h-full ">
-        <div className="min-w-[40rem]">
+        <div className="min-w-[40rem]  h-full">
           <div className="flex justify-center items-center h-full w-full">
             <Line
               options={options}

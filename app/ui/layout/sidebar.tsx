@@ -60,7 +60,7 @@ export default async function Header({ lang }: { lang: Locale }) {
                   ></path>
                 </g>
               </svg>
-              <span className="link-text">Cats</span>
+              <span className="link-text">Don&apos;t Click</span>
             </a>
           </li>
 
@@ -87,7 +87,7 @@ export default async function Header({ lang }: { lang: Locale }) {
                   ></path>
                 </g>
               </svg>
-              <span className="link-text">Aliens</span>
+              <span className="link-text">Don&apos;t Click</span>
             </a>
           </li>
 
@@ -114,7 +114,7 @@ export default async function Header({ lang }: { lang: Locale }) {
                   ></path>
                 </g>
               </svg>
-              <span className="link-text">Space</span>
+              <span className="link-text">Don&apos;t Click</span>
             </a>
           </li>
 
@@ -141,7 +141,7 @@ export default async function Header({ lang }: { lang: Locale }) {
                   ></path>
                 </g>
               </svg>
-              <span className="link-text">Shuttle</span>
+              <span className="link-text">Don&apos;t Click</span>
             </a>
           </li>
 

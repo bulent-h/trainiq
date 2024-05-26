@@ -25,7 +25,6 @@ function TopSkillsTable({
         .sort((a, b) =>
           b[column].toString().localeCompare(a[column].toString())
         );
-      console.log(sortData);
       setSortingData(sortData);
       setSortingColumn([]);
     } else {

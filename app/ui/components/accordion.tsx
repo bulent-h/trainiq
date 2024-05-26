@@ -1,5 +1,6 @@
 import { List } from "postcss/lib/list";
 import React, { useState } from "react";
+import ActionButton from "./actionButton";
 type Team = {
   description: string;
   employees: Employee[];
@@ -23,7 +24,6 @@ const Accordion = ({ team }: TeamProps) => {
   const [isActive, setIsActive] = useState(false);
   const [showMore, setShowMore] = useState(false);
   return (
-    
     <div className="overflow-auto h-full">
       <h2 className="flex flex-col font-light text-gray-700  xtransition ease-in delay-50 rounded-xl ">
         <button
@@ -45,18 +45,17 @@ const Accordion = ({ team }: TeamProps) => {
 
               <span className="flex justify-start items-center lg:w-[50%] w-[40%] py-2 pl-2 text-sm my-1.5   ">
                 <div className="text-start ">
-                  {isActive ? team.description : `${team.description.substring(0, 70)}`}
-                  {(team.description.length>70)&&
-                    <div
-                    className=" text-xs inline "
-                  >
-                    ...
-                    <div className="text-blue-400 dark:text-blue-700   hover:text-blue-500 dark:hover:text-blue-500">
-                    {isActive ? " show less" : " show more"}
-
+                  {isActive
+                    ? team.description
+                    : `${team.description.substring(0, 70)}`}
+                  {team.description.length > 70 && (
+                    <div className=" text-xs inline ">
+                      ...
+                      <div className="text-blue-400 dark:text-blue-700   hover:text-blue-500 dark:hover:text-blue-500">
+                        {isActive ? " show less" : " show more"}
+                      </div>
                     </div>
-                  </div>
-                  }
+                  )}
                 </div>
               </span>
               <span className="flex justify-start items-center w-[5%] py-3 px-4 text-sm my-1.5   ">
@@ -84,7 +83,10 @@ const Accordion = ({ team }: TeamProps) => {
 
       {isActive && (
         <div className=" text-sm ">
-          <div className="m-5 rounded-xl border border-gray-300 dark:border-gray-700 overflow-hidden">
+          <div className="flex justify-end">
+            <ActionButton text="Add New Employee" className="mx-3 w-fit" />
+          </div>
+          <div className="m-3 rounded-xl border border-gray-300 dark:border-gray-700 overflow-hidden">
             <div className="flex flex-col bg-gray-50 dark:bg-gray-700  border-b-[1px] border-gray-200 dark:border-gray-700">
               <div className="flex flex-row justify-around text-sm">
                 <span className="flex justify-start items-center w-[15%] py-1 pl-2">

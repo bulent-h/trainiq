@@ -2,6 +2,7 @@
 import React, { useMemo, useState } from "react";
 import Accordion from "../components/accordion";
 import list, { List } from "postcss/lib/list";
+import ActionButton from "../components/actionButton";
 type Team = {
   description: string;
   employees: Employee[];
@@ -33,7 +34,6 @@ function TeamsTable({ teams }: Teams) {
         .sort((a, b) =>
           b[column].toString().localeCompare(a[column].toString())
         );
-      console.log(sortData);
       setSortingData(sortData);
       setSortingColumn([]);
     } else {
@@ -53,11 +53,15 @@ function TeamsTable({ teams }: Teams) {
       .slice()
       .sort((a, b) => a.overall_score - b.overall_score);
     setSortingData(sortedEmployees);
-  }, []);
+  }, [teams]);
   return (
     <>
       <h3 className="sticky top-0 px-2 py-2 font-semibold text-gray-500 align-middle border-b-[1px] border-gray-200 dark:border-gray-700">
-        Teams
+        <div className="flex justify-between">
+          <p>Teams</p>
+          {/* <button className="border-2 text-gray-100 dark:text-gray-100 border-gray-300 dark:border-gray-700 bg-green-500 dark:bg-green-500 text-xs rounded-xl p-2 hover:bg-green-400 active:bg-gray-400 dark:active:bg-gray-400 focus:outline-none focus:ring focus:ring-gray-300">Create New Team +</button> */}
+          <ActionButton text="Create New Team +" />
+        </div>
       </h3>
       <div className="overflow-auto ">
         <div className="min-w-[50rem] ">

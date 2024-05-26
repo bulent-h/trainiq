@@ -66,15 +66,15 @@ export default async function Page(props: any) {
               </Suspense>
             </div>
           </div>
-          <div className="grid lg:grid-cols-12 grid-cols-1 auto-rows-[minmax(auto,25rem)] gap-4 py-4">
-            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl lg:col-span-6 ">
+          <div className="grid lg:grid-cols-12 grid-cols-1 auto-rows-[minmax(auto,5em)] gap-4 py-4">
+            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl row-span-4 lg:col-span-6 ">
               <div className="h-full flex flex-col px-1 py-1 ">
                 <Suspense fallback={<TopEmployeesTableSkeleton />}>
                   <ActivityHoursChart activityHours={activity_hours} />
                 </Suspense>
               </div>
             </div>
-            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl lg:col-span-6">
+            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl row-span-3 lg:col-span-6">
               <div className="h-full flex flex-col px-1 py-1 ">
                 <Suspense fallback={<TopEmployeesTableSkeleton />}>
                   <CoursesTable
@@ -83,14 +83,14 @@ export default async function Page(props: any) {
                 </Suspense>
               </div>
             </div>
-            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl lg:col-span-6 ">
+            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl row-span-4 lg:col-span-6 ">
               <div className="h-full flex flex-col px-1 py-1 ">
                 <Suspense fallback={<TopEmployeesTableSkeleton />}>
                   <TopEmployeesTable topEmployeesData={top_employees} />
                 </Suspense>
               </div>
             </div>
-            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl lg:col-span-3 ">
+            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl row-span-3 lg:col-span-3 ">
               <div className="h-full flex flex-col px-1 py-1 ">
                 <Suspense fallback={<TopEmployeesTableSkeleton />}>
                   <TopSkillsTable
@@ -100,7 +100,7 @@ export default async function Page(props: any) {
                 </Suspense>
               </div>
             </div>
-            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl lg:col-span-3 ">
+            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl row-span-3 lg:col-span-3 ">
               <div className="h-full flex flex-col px-1 py-1 ">
                 <Suspense fallback={<TopEmployeesTableSkeleton />}>
                   <TopSkillsTable
@@ -110,7 +110,7 @@ export default async function Page(props: any) {
                 </Suspense>
               </div>
             </div>
-            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl lg:col-span-9 ">
+            <div className="overflow-hidden shadow-lg border bg-white/75 dark:bg-gray-900/90 border-gray-300 dark:border-gray-800 rounded-xl row-span-4 lg:col-span-9 ">
               <div className="h-full flex flex-col px-1 py-1 ">
                 <Suspense fallback={<TopEmployeesTableSkeleton />}>
                   <TeamsTable teams={teams} />
